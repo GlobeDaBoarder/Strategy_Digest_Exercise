@@ -5,7 +5,6 @@ import org.apache.commons.codec.binary.Hex;
 
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
 
 public class SHA1Strategy implements HashStrategy{
     @Override
