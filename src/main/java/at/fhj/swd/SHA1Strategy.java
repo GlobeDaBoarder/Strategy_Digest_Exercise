@@ -6,7 +6,7 @@ import org.apache.commons.codec.binary.Hex;
 import java.io.UnsupportedEncodingException;
 import java.security.NoSuchAlgorithmException;
 
-public class SHA1Strategy implements HashStrategy{
+class SHA1Strategy implements HashStrategy{
     @Override
     public String toHashString(String message){
         try {
