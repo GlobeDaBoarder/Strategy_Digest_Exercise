@@ -11,7 +11,7 @@ class SHA256Strategy implements HashStrategy{
         try {
             return Hex.encodeHexString(HashUtils.toSHA256(message.getBytes()));
         } catch (NoSuchAlgorithmException e) {
-            throw new IllegalArgumentException(e);
+            throw new IllegalStateException(e);
         }
     }
 }

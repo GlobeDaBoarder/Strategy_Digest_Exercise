@@ -11,7 +11,7 @@ class SHA512Strategy implements HashStrategy{
         try {
             return HashUtils.toSHA512(message);
         } catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
-            throw new IllegalArgumentException(e);
+            throw new IllegalStateException(e);
         }
     }
 }

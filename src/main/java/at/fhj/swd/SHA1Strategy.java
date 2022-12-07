@@ -12,7 +12,7 @@ class SHA1Strategy implements HashStrategy{
         try {
             return Hex.encodeHexString(HashUtils.toSHA1(message));
         } catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
-            throw new IllegalArgumentException(e);
+            throw new IllegalStateException(e);
         }
     }
 }
